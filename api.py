@@ -10,7 +10,6 @@ except AttributeError:
     lanczos = Image.LANCZOS  # type: ignore
 
 class HPCharacter:
-    
     def __init__(self, data):
         self.id = data.get('id', '')
         self.name = data.get('name', 'Unknown')
@@ -41,14 +40,12 @@ class HPCharacter:
             return "None"
         return ", ".join(self.alternate_names)
 
-
 class HPSpell:
     
     def __init__(self, data):
         self.id = data.get('id', '')
         self.name = data.get('name', 'Unknown')
         self.description = data.get('description', 'No description available')
-
 
 class HarryPotterAPI:
     
@@ -104,9 +101,7 @@ class HarryPotterAPI:
         except Exception as e:
             raise Exception(f"Error fetching spells: {str(e)}")
 
-
 class HarryPotterApp:
-    
     def __init__(self, root):
         self.root = root
         self.root.title("Harry Potter Club-House")
