@@ -1,5 +1,6 @@
 # Harry-Potter-Club-house
-**Harry Potter Club-House **
+**Harry Potter Club-House**
+
 Python desktop app developed using tkinter that enables the user to learn more about the Harry Potter world. It retrieves live information on Harry Potter API to show character information, lore, and spells.
 
 **Features**
